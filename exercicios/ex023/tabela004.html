@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif
+
+         caption {
+            font-size: 1,3em;
+            font-weight: bold;
+            padding: 10px;
+         }
+
+        table{
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid gray;
+            padding: 10px;
+        }
+    }
+    </style>
+</head>
+<body>
+    <h1>Exercicio de Tabela</h1>
+    <table>
+        <caption>
+           Filmes Favoritos
+        </caption>
+
+        <thead>
+            <tr>
+                <th>Grupos</th>
+                <th>Nomes</th>
+                <th colspan="3">Filmeas</th>
+            </tr>
+
+        </thead>
+
+        <tbody>
+            <tr>
+                <th rowspan="3">Mulheres</th>
+                <td>Ana Maria</td>
+                <td>Alice</td>
+                <td>Vingadores</td>
+                <td>Lorex</td>
+            </tr>
+
+            <tr>
+                <td>Beatriz Souza</td>
+                <td>Thor</td>
+                <td>Dracula</td>
+                <td>Click</td>
+            </tr>
+
+            <tr>
+                <td>Claudia Melo</td>
+                <td>Batman</td>
+                <td>Cinderela</td>
+                <td>Hulk</td>
+            </tr>
+
+             <tr>
+                <th rowspan="3">Homens</th>
+                <td>Bruno Souza</td>
+                <td>Matrix</td>
+                <td>Galinhas</td>
+                <td>Bella</td>
+             </tr>
+
+             <tr>
+                <td>Julio Matias</td>
+                <td>Garfitil</td>
+                <td>Alien</td>
+                <td>Up</td>
+             </tr>
+
+             <tr>
+                <td>Fabiano Mota</td>
+                <td>Tory Story</td>
+                <td>Wanda</td>
+                <td>Looky</td>
+             </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>
