@@ -9,7 +9,9 @@
            background-color: salmon;
 
            display: flex;
+           align-items: flex-start;
            flex-flow: row wrap;
+           height: 400px;
         }
 
         div.item{
@@ -20,32 +22,32 @@
         }
 
         div#i1 {
-            order: -4;
+            align-self: auto;
         }
 
         div#i2 {
-            order: 3;
+            align-self: stretch;
         }
 
         div#i3 {
-            order: 1;
+            align-self: flex-end;
         }
 
         div#i4 {
-            order: 7;
+            align-self: center;
         }
 
 
         div#i5 {
-            order: 5;
+            align-self: auto;
         }
 
         div#i6 {
-            order: -1;
+            align-self: stretch;
         }
 
         div#i7 {
-            order: 0;
+            align-self: center;
         }
     </style>
 </head>
