@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<style>
+div {
+    padding: 10px;
+    background-color: aquamarine;
+    overflow: hidden;
+    
+     input [type-text], textarea, select {
+        font: 17px ;
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+     }
+}
+</style>
+<body>
+    <div>
+        <div>
+            <input type="text" id="txtName" placeholder="Nome Cliente">
+        </div>
+        <div>
+            <div> <input type="text" id="txtIdade" placeholder="Idade Cliente">
+            </div>
+        </div>
+        <div>
+            <div>  <input type="text" id="txtEmail" placeholder="Email do Cliente"></div>
+        </div>
+        <div>
+            <select id="SeuPAís">
+                <option selected value="">Escolha seu País<option>
+                    <option value="índia">índia</option>
+                    <option value="Japan">Japan</option>
+                    <option value="USA">USA</option>
+            </select>
+        </div>
+        <div>
+            <input type="button" id="bt" value="Salvar" onclick="Salvar ()">
+        </div>
+    </div>
+
+    <script>
+       function Salvar()
+       {
+        confirm("Você deseja salvar as informações?");
+        alert('Olá, como você esta?');
+       }
+
+    </script>
+</body>
+</html>
