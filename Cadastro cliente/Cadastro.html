@@ -8,40 +8,50 @@
 <style>
 div {
     padding: 10px;
-    background-color: aquamarine;
+    background-color: rgb(117, 115, 114);
     overflow: hidden;
+  
     
-     input [type-text], textarea, select {
-        font: 17px ;
-        width: 100%;
+     input[type=text],textarea,select {
+        font: 17px Calibri;
+        width: 70%;
         padding: 12px;
-        border: 1px solid #ccc;
+        border: 1px solid #d63434;
         border-radius: 4px;
      }
-}
+
+            input[type="button"] {
+                font: 17px Calibri;
+                width: auto;
+                float: right;
+                cursor: pointer;
+                padding: 7px;
+            }
+        }
 </style>
-<body>
+
     <div>
         <div>
             <input type="text" id="txtName" placeholder="Nome Cliente">
         </div>
+
         <div>
             <div> <input type="text" id="txtIdade" placeholder="Idade Cliente">
             </div>
         </div>
-        <div>
+        
             <div>  <input type="text" id="txtEmail" placeholder="Email do Cliente"></div>
-        </div>
+
         <div>
-            <select id="SeuPAís">
-                <option selected value="">Escolha seu País<option>
+            <select id="Seupais">
+                <option selected value="">Escolha seu País</option>
                     <option value="índia">índia</option>
                     <option value="Japan">Japan</option>
                     <option value="USA">USA</option>
             </select>
         </div>
         <div>
-            <input type="button" id="bt" value="Salvar" onclick="Salvar ()">
+            <input type="button" id="bt" value="Salvar" onclick="Salvar()">
         </div>
     </div>
 
@@ -52,6 +62,25 @@ div {
         alert('Olá, como você esta?');
        }
 
-    </script>
+    
+          function Salvar() 
+          {
+            var name = document.getElementById('txtName').value;
+            var idade = document.getElementById('txtIdade').value;
+            var email = document.getElementById('txtEmail').value;
+             var pais = document.getElementById('Seupais').value;
+
+             var data = 
+             'as informaçoes abaixo estão corretas?\r\n\n' + 'Name: ' + name + '\r\n' +
+             'Idade: ' + idade + '\r\n' +
+             'Email: ' + email + '\r\n' +
+             'Pais: ' + pais;
+
+             confirm(data);
+
+            }
+            </script>
+           
+        
 </body>
 </html>
